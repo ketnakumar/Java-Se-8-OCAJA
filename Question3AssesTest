@@ -1,0 +1,17 @@
+public class Question3 extends Puma{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Puma puma = new Puma();  // Compile Error: Cannot instantiate the type Puma.
+		System.out.println(puma.getTailLength());
+	}
+	public int getTailLength(){
+		return 2;
+	}
+
+}
+abstract class Puma implements HasTail{
+	protected int getTailLength() {  // Compiler Error: Cannot reduce visibilty of the inherited method.
+		return 4;
+	}
+}

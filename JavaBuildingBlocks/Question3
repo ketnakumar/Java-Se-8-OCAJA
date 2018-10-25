@@ -1,0 +1,13 @@
+public class Question3 {
+
+	public static void main(String[] args) {
+		short numPets = 5;
+		int numGrains = 5.6;  //compile error
+		String name = "Scruffy";
+		numPets.length(); //compile error
+		numGrains.length(); //compile error
+		name.length();
+
+	}
+
+}

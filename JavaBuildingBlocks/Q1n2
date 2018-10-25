@@ -1,0 +1,21 @@
+public class JavaBuildingBlocksQ1n2 {
+	// A$B -- valid identifier
+	// _helloWorld -- valid identifier
+	// true -- invalid identifier -true is reserved word
+	// java.lang -- invalid
+	// Public  -- valid because java is case sensitive, 
+			      // and public is a reserved word
+	//1980_s --invalid
+	private String brand;
+	private boolean empty;
+	public static void main(String[] args) {
+		JavaBuildingBlocksQ1n2 jb = new JavaBuildingBlocksQ1n2();
+		System.out.println("Empty = " + jb.empty);
+		System.out.println("Brand = " + jb.brand);
+	}
+
+}
+
+//output
+Empty = false
+Brand = null

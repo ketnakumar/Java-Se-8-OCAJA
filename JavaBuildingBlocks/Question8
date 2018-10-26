@@ -1,0 +1,12 @@
+public class BirdDisply {
+  public static void main(String[] args){
+      System.out.println(name[1]);
+  }  
+
+}
+
+Which statement will print Blue Jay?
+
+java BirdDisplay Sparrow "Blue Jay" - correct answer
+java BirdDisplay.class Sparrow "Blue Jay" - gives an error of couldn't find or load 
+                                            main class BirdDisplay.class.

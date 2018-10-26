@@ -1,0 +1,23 @@
+public class Rabbit {
+  public static void main(String[] args) {
+      Rabbit one = new Rabbit();
+      Rabbit two = new Rabbit();
+      Rabbit three = one;
+      one = null;
+      Rabbit four = one;
+      three = null;
+      two = null;
+      two = new Rabbit();
+      System.gc();
+  }
+
+}
+The Rabbit object from line 3 is first eligible for garbage collection immediately following line 8.
+The Rabbit object from line 4 is first eligible for garbage collection immediately following line 9.
+    The Rabbit object from line 3 has two references to it, one and three. The references are nulled
+    out on line 6 and 8, respectively. Line 7 sets the reference four to null one, which means it has 
+    no effect on garbage collection. 
+    The Rabbit object on line 4 has single reference to it, two, which becomes null on line 9. 
+    The Rabbit object declared on line 10 becomes eligible for garbage collection on line 12.
+    Calling System.gc() has no effect on eligibility for garbage collection.
+    

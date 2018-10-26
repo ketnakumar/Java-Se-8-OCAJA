@@ -1,0 +1,18 @@
+public class Bear {
+	
+	protected void finalize(){
+		System.out.println("Roar!");
+	}
+	
+	public static void main(String[] args) {
+		Bear bear = new Bear();
+		bear = null;
+		System.gc();
+		
+	}
+
+}
+
+// finalize() might or might not be called. finalize() is called only if an object tries to be garbage collected.
+// garbage collection might or might not run.
+

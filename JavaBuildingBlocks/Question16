@@ -1,0 +1,14 @@
+public class AmountDeclaration {
+
+	public static void main(String[] args) {
+		int amount = 9L; // invalid - L is Long value, can't be asigned to int primitive.
+		int amount = 0b101; // valid - 0b is prefix for binary value.
+		int amount = 0xE;  // valid - 0x is prefix for hexadecimal value.
+		double amount = 0xE; // valid
+		double amount = 1_2_.0_0; //invalid - underscore cant be before decimal point.
+		int amount = 1_2_; //invalid - underscore can't be the last character.
+		System.out.println(amount);
+
+	}
+
+}

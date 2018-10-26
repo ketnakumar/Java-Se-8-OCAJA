@@ -1,0 +1,25 @@
+package aquarium;
+
+public class Water {
+  boolean salty = false;
+}
+
+package aquarium.jellies;
+public class Water {
+  boolean salty = false;
+}
+
+package employee;
+INSERT IMPORTS HERE
+public class WaterFiller {
+   Water water;
+}
+
+Answers:
+ import aquarium.*;
+or 
+ import aquarium.Water;
+ import aquarium.jellies.*;
+ or
+ import aquarium.*;
+ import aquarium.jellies.Water;
